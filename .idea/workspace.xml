@@ -6,7 +6,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eddba0f5-e0ec-481a-81e7-ee671ed65919" name="Default Changelist" comment="" />
+    <list default="true" id="eddba0f5-e0ec-481a-81e7-ee671ed65919" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,10 +27,15 @@
       </state>
     </system>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1ewjiV9Cph5rUSe9UYoPtytTS56" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -45,7 +52,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -109,5 +116,15 @@
       <updated>1595239676589</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="997" y="275" key="AndroidCreateResourceFileDialog" timestamp="1595240947638">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="997" y="275" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595240947638" />
+    <state x="640" y="275" key="Downloadable.Font.Dialog.Size" timestamp="1595240645926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="275" key="Downloadable.Font.Dialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1595240645926" />
   </component>
 </project>
