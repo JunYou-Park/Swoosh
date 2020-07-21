@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SkillActivity">
+    tools:context=".Controller.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_skill_finish"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -50,6 +50,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="skillClicked"
         android:text="FINISH"
         android:textColor="@android:color/white"
         android:textSize="18sp"
@@ -70,13 +71,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/toggle_skill_beginner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="skillClicked"
             android:text="Beginner"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
@@ -85,13 +87,14 @@
             android:textSize="18sp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/toggle_skill_baller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="skillClicked"
             android:text="Baller"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
