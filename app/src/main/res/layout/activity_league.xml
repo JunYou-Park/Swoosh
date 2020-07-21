@@ -58,12 +58,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
+            android:fontFamily="@font/montserrat"
             android:text="Mens"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textOff="Mens"
             android:textOn="Mens"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <ToggleButton
             android:id="@+id/toggleButton2"
@@ -72,12 +73,13 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toggle"
+            android:fontFamily="@font/montserrat"
             android:text="ToggleButton"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textOff="Womens"
             android:textOn="Womens"
-            android:textSize="16sp"
+            android:textSize="18sp"
             tools:text="Womens" />
 
         <ToggleButton
@@ -85,26 +87,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
+            android:fontFamily="@font/montserrat"
             android:text="Co-ed"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textOff="Co-ed"
             android:textOn="Co-ed"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_league_next"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
+        android:fontFamily="@font/montserrat"
+        android:onClick="leagueNextClicked"
         android:text="NEXT"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
