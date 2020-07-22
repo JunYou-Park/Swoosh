@@ -4,21 +4,32 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.swoosh.Utilities.EXTRA_LEAGUE
+import com.example.swoosh.Model.Player
 import com.example.swoosh.R
-import com.example.swoosh.Utilities.EXTRA_SKILL
+import com.example.swoosh.Utilities.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_skill.*
 
 class SkillActivity : BaseActivity() {
 
-    var league = ""
-    var skill = ""
+    lateinit var player: Player
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(EXTRA_PLAYER,player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if(savedInstanceState != null){
+            savedInstanceState.getParcelable<Player>(EXTRA_PLAYER)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
 
-        league = intent.getStringExtra(EXTRA_LEAGUE).toString()
-        println(league)
+        player = intent.getParcelableExtra<Player>(EXTRA_PLAYER) ?: Player("Null","Null")
 
     }
 
@@ -27,8 +38,7 @@ class SkillActivity : BaseActivity() {
             R.id.btn_skill_finish->{
                 if(toggle_skill_baller.isChecked||toggle_skill_beginner.isChecked){
                     val finishActivity = Intent(this, FinishActivity::class.java)
-                    finishActivity.putExtra(EXTRA_LEAGUE, league)
-                    finishActivity.putExtra(EXTRA_SKILL, skill)
+                    finishActivity.putExtra(EXTRA_PLAYER, player)
                     startActivity(finishActivity)
                 }
                 else{
@@ -38,11 +48,11 @@ class SkillActivity : BaseActivity() {
             }
             R.id.toggle_skill_beginner->{
                 toggle_skill_baller.isChecked = false
-                skill = "beginner"
+                player.skill = "beginner"
             }
             R.id.toggle_skill_baller->{
                 toggle_skill_beginner.isChecked = false
-                skill = "baller"
+                player.skill = "baller"
             }
         }
     }
